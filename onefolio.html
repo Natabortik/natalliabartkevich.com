@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onefolio.ai – Your whole financial life. One view. One always-on analyst.</title>
+<meta name="description" content="Onefolio gives you a single read-only view of all your assets and an AI that detects risk drift before it hurts.">
+<style>
+:root{--bg:#0b1220;--card:#121c30;--line:#22304d;--txt:#e8eef9;--mut:#8fa0bf;--acc:#2dd4bf;--warn:#fb923c}
+*{box-sizing:border-box;margin:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.w{max-width:1080px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:800;font-size:1.25rem}.logo span{color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:#04201c;font-weight:700;padding:12px 22px;border-radius:10px;text-decoration:none}
+.btn.o{background:none;color:var(--txt);border:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:56px 0 70px}
+.tag{color:var(--acc);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+h1{font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.1;margin:14px 0 18px}
+h1 em{font-style:normal;color:var(--acc)}
+.sub{color:var(--mut);font-size:1.1rem;margin-bottom:26px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.row:last-child{border:0}.row b{font-variant-numeric:tabular-nums}
+.alert{margin-top:14px;background:#2a1d12;border:1px solid #6b3d17;border-radius:12px;padding:14px;font-size:.9rem}
+.alert strong{color:var(--warn)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,3.2vw,2.3rem);margin-bottom:12px}
+.lead{color:var(--mut);max-width:680px;margin-bottom:34px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.big{font-size:2.2rem;font-weight:800;color:var(--acc)}
+.card p{color:var(--mut);font-size:.95rem}.card h3{margin-bottom:6px}
+.demo{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.bar{display:flex;height:34px;border-radius:8px;overflow:hidden;margin:8px 0 14px}
+.bar div{display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#04121f;transition:width .3s}
+.leg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.78rem;color:var(--mut)}
+.leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px}
+input[type=range]{width:100%;accent-color:var(--acc);margin:10px 0}
+.ai{border-left:3px solid var(--acc);padding-left:14px;color:var(--txt);min-height:96px}
+.ai.w2{border-color:var(--warn)}
+.steps{counter-reset:s}.steps .card{position:relative;padding-top:50px}
+.steps .card:before{counter-increment:s;content:counter(s);position:absolute;top:16px;left:22px;width:28px;height:28px;border-radius:50%;background:var(--acc);color:#04201c;font-weight:800;text-align:center;line-height:28px}
+.cta{text-align:center}.cta .lead{margin:0 auto 26px}
+footer{padding:30px 0;color:var(--mut);font-size:.8rem;border-top:1px solid var(--line)}
+@media(max-width:820px){.hero,.demo,.g3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><div class="logo">One<span>folio</span>.ai</div><a class="btn o" href="#contact">Request access</a></nav>
+
+<header class="hero">
+<div>
+<div class="tag">AI wealth monitoring</div>
+<h1>Your entire financial life. <em>One view.</em> One always-on analyst.</h1>
+<p class="sub">Onefolio connects your bank accounts, brokerage depots, crypto wallets, real estate and pension plans in one read-only dashboard, and an AI that tells you when your real risk quietly drifts away from what you intended.</p>
+<a class="btn" href="#demo">Try the live demo</a> &nbsp; <a class="btn o" href="#contact">Talk to us</a>
+</div>
+<div class="card" aria-label="Product preview">
+<div class="tag" style="margin-bottom:8px">Net worth · illustrative</div>
+<div style="font-size:2rem;font-weight:800">€ 612,400</div>
+<div style="margin:10px 0 6px">
+<div class="row"><span>Bank accounts</span><b>€ 48,200</b></div>
+<div class="row"><span>Brokerage depots</span><b>€ 171,500</b></div>
+<div class="row"><span>Crypto wallets</span><b>€ 118,900</b></div>
+<div class="row"><span>Real estate</span><b>€ 215,000</b></div>
+<div class="row"><span>Pension / 401K</span><b>€ 58,800</b></div>
+</div>
+<div class="alert"><strong>Drift detected:</strong> Crypto is now 19% of your net worth. You planned 5%. A 40% drop would cost you about € 47,000.</div>
+</div>
+</header>
+</div>
+
+<section><div class="w">
+<div class="tag">The problem</div>
+<h2>Wealth drifts. Nobody notices.</h2>
+<p class="lead">People set an allocation once. Then markets move and life changes, and the real exposure quietly stops matching the plan. Today's apps show numbers. None of them watch for you.</p>
+<div class="g3">
+<div class="card"><div class="big">5% → 30%</div><h3>Concentration risk</h3><p>A crypto position grows unnoticed until it dominates net worth.</p></div>
+<div class="card"><div class="big">Timing</div><h3>Pension mismatch</h3><p>Retirement plans stop fitting the date you actually plan to retire.</p></div>
+<div class="card"><div class="big">Inflation</div><h3>Silent erosion</h3><p>Idle savings lose purchasing power while looking perfectly safe.</p></div>
+</div>
+</div></section>
+
+<section id="demo"><div class="w">
+<div class="tag">Interactive demo</div>
+<h2>See drift happen, then see it explained.</h2>
+<p class="lead">Move the slider to simulate crypto outperforming the rest of the portfolio. Watch the real allocation drift from the plan and how Onefolio reacts.</p>
+<div class="demo">
+<div class="card">
+<b>Your plan</b><div class="bar" id="plan"></div>
+<b>Reality today</b><div class="bar" id="real"></div>
+<div class="leg" id="leg"></div>
+<label style="display:block;margin-top:18px;font-size:.9rem;color:var(--mut)">Crypto growth since plan: <b id="mv" style="color:var(--txt)">1.0×</b></label>
+<input type="range" id="sl" min="10" max="100" value="10" aria-label="Crypto growth multiplier">
+</div>
+<div class="card">
+<div class="tag" style="margin-bottom:10px">Onefolio AI analyst</div>
+<div class="ai" id="ai"></div>
+</div>
+</div>
+<p style="color:var(--mut);font-size:.78rem;margin-top:14px">Demo with illustrative data. Not financial advice.</p>
+</div></section>
+
+<section><div class="w">
+<div class="tag">How it works</div>
+<h2>From scattered accounts to clear action.</h2>
+<p class="lead">Read-only by design. Onefolio can see your assets but can never move your money.</p>
+<div class="g3 steps">
+<div class="card"><h3>Connect</h3><p>Link banks, depots, wallets, property and pensions securely, with view-only access.</p></div>
+<div class="card"><h3>Define your intent</h3><p>Set the allocation and risk level you want, tied to your life goals and timeline.</p></div>
+<div class="card"><h3>Stay informed</h3><p>The AI watches continuously and explains every drift in plain language, with what it means for you.</p></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<div class="tag">Why Onefolio</div>
+<h2>Not another dashboard.</h2>
+<div class="g3" style="margin-top:26px">
+<div class="card"><h3>Complete picture</h3><p>Liquid and illiquid assets, in any country, in one system.</p></div>
+<div class="card"><h3>Proactive, not passive</h3><p>An analyst that speaks up when something changes, instead of waiting to be opened.</p></div>
+<div class="card"><h3>Private and read-only</h3><p>No transactions, no product sales, no conflict of interest.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="w cta">
+<div class="tag">Join us</div>
+<h2>Building the always-on analyst for personal wealth.</h2>
+<p class="lead">We are opening early access and talking to investors and partners. Get in touch.</p>
+<a class="btn" href="mailto:hello@onefolio.ai?subject=Onefolio%20early%20access">hello@onefolio.ai</a>
+</div></section>
+
+<footer><div class="w">© 2026 Onefolio.ai · Prototype. All figures illustrative. Not financial advice.</div></footer>
+
+<script>
+var A=[["Stocks & ETFs",40,"#60a5fa"],["Real estate",30,"#a78bfa"],["Pension",15,"#34d399"],["Cash",10,"#fbbf24"],["Crypto",5,"#fb923c"]];
+function bar(id,v){var t=v.reduce(function(a,b){return a+b},0);document.getElementById(id).innerHTML=v.map(function(x,i){var p=x/t*100;return '<div style="width:'+p+'%;background:'+A[i][2]+'">'+(p>6?Math.round(p)+'%':'')+'</div>'}).join('')}
+document.getElementById('leg').innerHTML=A.map(function(a){return '<span><i style="background:'+a[2]+'"></i>'+a[0]+'</span>'}).join('');
+function upd(){
+ var m=document.getElementById('sl').value/10;
+ document.getElementById('mv').textContent=m.toFixed(1)+'×';
+ var v=A.map(function(a){return a[1]});v[4]=5*m;
+ var t=v.reduce(function(a,b){return a+b},0),c=Math.round(v[4]/t*100);
+ bar('plan',A.map(function(a){return a[1]}));bar('real',v);
+ var el=document.getElementById('ai');
+ if(c<=8){el.className='ai';el.innerHTML='All good. Your portfolio is close to your plan. Crypto is '+c+'% of net worth (target 5%). Nothing to do.'}
+ else if(c<=15){el.className='ai w2';el.innerHTML='<b>Early drift.</b> Crypto has grown to '+c+'% of your net worth, against a 5% plan. It is not urgent, but your risk is rising. Keep watching.'}
+ else{var loss=Math.round(c*0.4);el.className='ai w2';el.innerHTML='<b>Significant drift.</b> Crypto is now '+c+'% of your net worth, far above the 5% you intended. If crypto fell 40%, your total wealth would drop about '+loss+'%. Consider rebalancing toward your plan.'}
+}
+document.getElementById('sl').addEventListener('input',upd);upd();
+</script>
+</body>
+</html>
